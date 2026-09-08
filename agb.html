@@ -6,114 +6,218 @@
   <title>Allgemeine Geschäftsbedingungen (AGB) — Automaten Jever</title>
   <meta name="description" content="AGB für die Snackautomaten der Automaten Jever (Inhaber: Nico Evers).">
   <style>
-    /* Minimal styling für Lesbarkeit */
-    body { font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial; line-height: 1.6; padding: 1rem; max-width: 900px; margin: auto; color:#111; }
-    header, main, footer { margin-bottom: 1.25rem; }
-    h1 { font-size: 1.5rem; margin-bottom:.25rem; }
-    address { font-style: normal; }
-    .meta { color: #555; font-size: .9rem; margin-bottom: .75rem; }
-    ol { padding-left: 1.25rem; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.8;
+      color: #333;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      min-height: 100vh;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 40px 30px;
+      text-align: center;
+    }
+
+    .header h1 {
+      font-size: 2.2em;
+      margin-bottom: 6px;
+      font-weight: 700;
+    }
+
+    .header p {
+      font-size: 1.05em;
+      opacity: 0.95;
+    }
+
+    .content {
+      padding: 36px;
+    }
+
+    section {
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #667eea;
+      font-size: 1.4em;
+      margin-bottom: 10px;
+      padding-bottom: 8px;
+      border-left: 4px solid #667eea;
+      padding-left: 15px;
+    }
+
+    h3 {
+      color: #555;
+      font-size: 1.05em;
+      margin-top: 16px;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 12px;
+      text-align: justify;
+    }
+
+    ul, ol {
+      margin: 12px 0 12px 30px;
+    }
+
+    li { margin-bottom: 8px; }
+
+    .contact-card {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: white;
+      padding: 18px;
+      border-radius: 8px;
+      margin: 12px 0 22px 0;
+    }
+
+    .contact-card strong { display:block; font-size:1.1em; margin-bottom:8px; }
+
+    .contact-info { display:flex; flex-direction:column; gap:6px; font-size:0.98em; }
+
+    .contact-info a { color: #ffeb3b; text-decoration:none; }
+
+    .divider {
+      height: 2px;
+      background: linear-gradient(to right, #667eea, #764ba2, #667eea);
+      margin: 30px 0;
+    }
+
+    .footer {
+      background: #f5f7fa;
+      padding: 24px;
+      text-align: center;
+      color: #666;
+      border-top: 1px solid #e0e0e0;
+    }
+
+    .footer p { margin-bottom:6px; font-size:0.95em; }
+
+    .meta { color:#555; font-size:0.95em; margin-bottom:8px; }
+
+    @media (max-width: 768px) {
+      .content { padding: 20px; }
+      .header h1 { font-size: 1.6em; }
+      h2 { font-size: 1.15em; }
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Allgemeine Geschäftsbedingungen (AGB)</h1>
-    <p class="meta">Automaten Jever — Inhaber: Nico Evers</p>
-    <p class="meta">Zuletzt aktualisiert: 2026-09-08</p>
-  </header>
+  <div class="container">
+    <div class="header">
+      <h1>📜 Allgemeine Geschäftsbedingungen (AGB)</h1>
+      <p>Automaten Jever — Inhaber: Nico Evers</p>
+    </div>
 
-  <main>
-    <section id="intro">
-      <p>Diese Allgemeinen Geschäftsbedingungen gelten für sämtliche Käufe an den von Automaten Jever (Inhaber: Nico Evers) betriebenen Verkaufsautomaten.</p>
-    </section>
+    <div class="content">
+      <section>
+        <h2>Geltungsbereich</h2>
+        <p>Diese Allgemeinen Geschäftsbedingungen gelten für sämtliche Käufe an den von Automaten Jever betriebenen Verkaufsautomaten.</p>
+      </section>
 
-    <ol>
-      <li id="geltungsbereich">
-        <h2>1. Geltungsbereich</h2>
-        <p>Diese AGB regeln das Vertragsverhältnis zwischen dem Käufer und dem Betreiber der Verkaufsautomaten.</p>
-      </li>
-
-      <li id="vertragsschluss">
-        <h2>2. Vertragsschluss</h2>
+      <section>
+        <h2>Vertragsschluss</h2>
         <p>Die Warenpräsentation im Automaten stellt ein verbindliches Angebot zum Kauf dar. Der Vertrag kommt zustande, sobald der Kunde eine Ware auswählt und den Bezahlvorgang durch Einwurf des entsprechenden Betrags bzw. durch Bestätigung des bargeldlosen Bezahlvorgangs abgeschlossen hat.</p>
-      </li>
+      </section>
 
-      <li id="preise-zahlung">
-        <h2>3. Preise und Zahlung</h2>
-        <ul>
-          <li>Es gelten die am Automaten angezeigten Preise in Euro. (Sofern zutreffend: Alle Preise verstehen sich inkl. der gesetzlichen Umsatzsteuer.)</li>
-          <li>Zahlungsarten:
-            <ul>
-              <li>Bargeld (Münzen)</li>
-              <li>Kartenzahlung / kontaktlos</li>
-            </ul>
-          </li>
-          <li>Der Kunde ist vor Abschluss des Bezahlvorgangs verpflichtet zu prüfen, ob Preis und Produktauswahl korrekt sind.</li>
-        </ul>
-      </li>
+      <section>
+        <h2>Preise und Zahlung</h2>
+        <p>Es gelten die am Automaten angezeigten Preise in Euro. (Sofern zutreffend: Alle Preise verstehen sich inklusive der gesetzlichen Umsatzsteuer.)</p>
+        <p>Zahlungsarten: Bargeld (Münzen), Kartenzahlung / kontaktlos.</p>
+        <p>Der Kunde ist vor Abschluss des Bezahlvorgangs verpflichtet zu prüfen, ob Preis und Produktauswahl korrekt sind.</p>
+      </section>
 
-      <li id="pfand">
-        <h2>4. Pfand</h2>
+      <section>
+        <h2>Pfand</h2>
         <p>Für bestimmte Getränkeverpackungen (z. B. Einwegflaschen, Dosen) kann ein Pfand erhoben werden. Ob ein Pfand anfällt, ist am jeweiligen Produkt sowie am Automaten deutlich ausgewiesen.</p>
         <p>Der Pfandbetrag wird zusammen mit dem Kaufpreis beim Bezahlvorgang erhoben. Die Rückgabe pfandpflichtiger Verpackungen erfolgt an geeigneten Rücknahmestellen (z. B. Rücknahmeautomaten oder Sammelstellen). Nach ordnungsgemäßer Rückgabe und Prüfung der Verpackung wird der Pfandbetrag erstattet.</p>
         <p>Die Erstattung des Pfandes erfolgt, sofern technisch möglich, in der Zahlungsart, mit der der Kauf getätigt wurde. Bei Bargeldkäufen kann die Erstattung bar am Automaten erfolgen, sofern dieser die Auszahlung unterstützt; andernfalls erfolgt eine Gutschrift/Überweisung nach Vereinbarung und Angabe erforderlicher Kontodaten.</p>
-        <p>Sollte eine Rückgabe nicht möglich sein oder die Verpackung nicht den Rückgabevoraussetzungen entsprechen (beschädigt, verunreinigt o.ä.), besteht kein Anspruch auf Pfandrückerstattung.</p>
-        <p>Rechte und Pflichten im Zusammenhang mit gesetzlichen Rücknahmeregelungen (z. B. Einwegpfandpflicht) richten sich zudem nach den jeweils geltenden gesetzlichen Vorschriften.</p>
-      </li>
+        <p>Sollte eine Rückgabe nicht möglich sein oder die Verpackung nicht den Rückgabevoraussetzungen entsprechen (beschädigt, verunreinigt o.ä.), besteht kein Anspruch auf Pfandrückerstattung. Rechte und Pflichten im Zusammenhang mit gesetzlichen Rücknahmeregelungen richten sich nach den jeweils geltenden gesetzlichen Vorschriften.</p>
+      </section>
 
-      <li id="warenausgabe">
-        <h2>5. Warenausgabe</h2>
+      <section>
+        <h2>Warenausgabe</h2>
         <p>Die Ware wird unmittelbar nach erfolgreicher Zahlung ausgegeben. Der Kunde ist verpflichtet, die Ware nach der Ausgabe unverzüglich zu entnehmen.</p>
-      </li>
+      </section>
 
-      <li id="stoerungen-reklamationen">
-        <h2>6. Störungen und Reklamationen</h2>
+      <section>
+        <h2>Störungen und Reklamationen</h2>
         <p>Sollte trotz erfolgreicher Zahlung keine Ware ausgegeben werden oder eine technische Störung auftreten, besteht Anspruch auf Erstattung des gezahlten Betrages nach Prüfung des Sachverhalts.</p>
         <p>Bitte richten Sie Reklamationen mit folgenden Angaben an die Kontaktadresse:</p>
         <ul>
           <li>Datum und Uhrzeit</li>
           <li>Standort des Automaten</li>
-          <li>gekauftes Produkt</li>
-          <li>möglichst Zahlungsnachweis (Bon, Kontoabbuchung o.ä.)</li>
+          <li>Gekauftes Produkt</li>
+          <li>Möglichst Zahlungsnachweis (Bon, Kontoabbuchung o.ä.)</li>
         </ul>
-        <address>
-          Automaten Jever<br>
-          Inhaber: Nico Evers<br>
-          E-Mail: <a href="mailto:automaten.jever@gmail.com">automaten.jever@gmail.com</a><br>
-          Whatsapp/Telefon: <a href="tel:+4915233512415">0152 33512415</a>
-        </address>
-        <p>Erstattungen erfolgen nach Prüfung in der Regel innerhalb von 14 Tagen. (Alternativ: Barauszahlung am Automaten / Gutschrift per Überweisung — je nach Sachlage.)</p>
-      </li>
 
-      <li id="verfuegbarkeit">
-        <h2>7. Verfügbarkeit</h2>
+        <div class="contact-card">
+          <strong>Automaten Jever</strong>
+          <div class="contact-info">
+            <span>Inhaber: Nico Evers</span>
+            <span>Ringstraße 14a, 26441 Jever</span>
+            <span><a href="mailto:automaten.jever@gmail.com">📧 automaten.jever@gmail.com</a></span>
+            <span><a href="tel:+4915233512415">📱 +49 152 335 124 15</a> (Telefon/WhatsApp)</span>
+          </div>
+        </div>
+
+        <p>Erstattungen erfolgen nach Prüfung in der Regel innerhalb von 14 Tagen. Alternativ kann eine Barauszahlung am Automaten oder eine Gutschrift per Überweisung erfolgen, je nach Sachlage.</p>
+      </section>
+
+      <section>
+        <h2>Verfügbarkeit</h2>
         <p>Es besteht kein Anspruch auf die ständige Verfügbarkeit bestimmter Produkte. Irrtümer bei Preisangaben, Produktbeschreibungen oder Warenverfügbarkeiten bleiben vorbehalten.</p>
-      </li>
+      </section>
 
-      <li id="haftung">
-        <h2>8. Haftung</h2>
+      <section>
+        <h2>Haftung</h2>
         <p>Der Betreiber haftet für Schäden nur bei Vorsatz oder grober Fahrlässigkeit sowie im Rahmen zwingender gesetzlicher Vorschriften. Die Haftung für einfache Fahrlässigkeit ist ausgeschlossen, soweit gesetzlich zulässig.</p>
-      </li>
+      </section>
 
-      <li id="jugendschutz">
-        <h2>9. Jugendschutz</h2>
+      <section>
+        <h2>Jugendschutz</h2>
         <p>Soweit gesetzliche Altersbeschränkungen für einzelne Produkte bestehen (z. B. alkoholische Getränke oder tabakähnliche Erzeugnisse), dürfen diese nur an Personen veräußert werden, die das erforderliche Mindestalter erreicht haben. Der Kunde hat auf Verlangen einen geeigneten Altersnachweis vorzulegen.</p>
-      </li>
+      </section>
 
-      <li id="datenschutz">
-        <h2>10. Datenschutz</h2>
+      <section>
+        <h2>Datenschutz</h2>
         <p>Informationen zur Verarbeitung personenbezogener Daten, insbesondere im Zusammenhang mit Kartenzahlungen und gegebenenfalls eingesetzten Videoüberwachungsanlagen, finden Sie in unserer <a href="datenschutz.html">Datenschutzerklärung</a>.</p>
-      </li>
+      </section>
 
-      <li id="schlussbestimmungen">
-        <h2>11. Schlussbestimmungen</h2>
+      <section>
+        <h2>Schlussbestimmungen</h2>
         <p>Es gilt das Recht der Bundesrepublik Deutschland. Sollten einzelne Bestimmungen dieser AGB ganz oder teilweise unwirksam sein oder werden, bleibt die Wirksamkeit der übrigen Bestimmungen unberührt.</p>
-      </li>
-    </ol>
-  </main>
+      </section>
 
-  <footer>
-    <p class="meta">Bei Fragen zu diesen AGB kontaktieren Sie uns bitte per E-Mail oder Telefon (siehe Kontakt oben).</p>
-  </footer>
+    </div>
+
+    <div class="footer">
+      <p><strong>Automaten Jever</strong></p>
+      <p>Nico Evers | Ringstraße 14a | 26441 Jever</p>
+      <p>📧 <a href="mailto:automaten.jever@gmail.com">automaten.jever@gmail.com</a> | 📱 <a href="tel:+4915233512415">+49 152 335 124 15</a></p>
+      <p style="margin-top:14px; font-size:0.9em; color:#999;">Zuletzt aktualisiert: September 2026</p>
+    </div>
+
+  </div>
 </body>
 </html>
