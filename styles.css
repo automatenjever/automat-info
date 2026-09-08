@@ -1,0 +1,44 @@
+/* Optimize font loading */
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600;700&display=swap');
+
+/* Reset and base styles */
+*{margin:0;padding:0;box-sizing:border-box}body{font-family:'Segoe UI',-apple-system,BlinkMacSystemFont,sans-serif;font-size:16px;line-height:1.6;color:#333;background-color:#fff}html{scroll-behavior:smooth}
+
+/* Typography */
+h1,h2,h3,h4,h5,h6{font-weight:700;line-height:1.2;margin-top:1.5em;margin-bottom:.5em}h1{font-size:2.5rem}h2{font-size:2rem;border-bottom:2px solid #007bff;padding-bottom:.5em}h3{font-size:1.5rem}
+
+/* Links */
+a{color:#007bff;text-decoration:none;transition:color .2s ease}a:hover{color:#0056b3;text-decoration:underline}a:focus{outline:2px solid #007bff;outline-offset:2px}
+
+/* Container and layout */
+.container{max-width:900px;margin:0 auto;padding:2rem;box-shadow:0 0 20px rgba(0,0,0,.1);border-radius:8px}
+
+/* Header */
+header{margin-bottom:3rem;border-bottom:3px solid #007bff;padding-bottom:2rem}header h1{margin-top:0}header nav{margin-top:1.5rem;font-size:1.1rem}header nav a{margin:0 .5rem;font-weight:600}
+
+/* Main content */
+main section{margin-bottom:3rem}main section:last-child{margin-bottom:0}
+
+/* Meta text */
+.meta{font-size:.9rem;color:#666;font-style:italic}
+
+/* Contact section */
+.contact address{font-style:normal;line-height:1.8;margin-bottom:1rem}.contact a{display:inline}
+
+/* Impressum */
+.impressum p{margin-bottom:1rem}
+
+/* Footer */
+footer{margin-top:3rem;padding-top:2rem;border-top:1px solid #ddd;text-align:center}
+
+/* Skip link */
+.skip-link{position:absolute;top:-40px;left:0;background:#007bff;color:white;padding:.5rem 1rem;z-index:100}.skip-link:focus{top:0}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+/* Responsive design */
+@media (max-width:768px){.container{padding:1.5rem}h1{font-size:2rem}h2{font-size:1.5rem}header nav{font-size:1rem}header nav a{margin:.3rem}body{font-size:15px}}
+
+/* Performance optimization */
+@media print{*,*::before,*::after{background:transparent!important;color:black!important;box-shadow:none!important}a,a:visited{text-decoration:underline}a[href]::after{content:" ("attr(href)")"}}
