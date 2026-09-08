@@ -33,65 +33,296 @@
 
   <meta name="theme-color" content="#e74c3c" />
 
-  <!-- CSS with font-display swap for better performance -->
-  <link rel="stylesheet" href="styles.css" media="screen">
-
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Automaten Jever",
-    "description": "Verkaufsautomat Informationen — AGB, Datenschutz, Videoüberwachung und Impressum",
-    "url": "https://automatenjever.github.io/automat-info/",
-    "email": "automaten.jever@gmail.com",
-    "telephone": "+49 152 33512415",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Ringstraße 14a",
-      "addressLocality": "Jever",
-      "postalCode": "26441",
-      "addressCountry": "DE"
-    },
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "contactType": "Customer Service",
-      "telephone": "+49 152 33512415",
-      "email": "automaten.jever@gmail.com"
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
     }
-  }
-  </script>
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+      font-size: 16px;
+      line-height: 1.6;
+      color: #e0e0e0;
+      background: #0a0e27;
+      min-height: 100vh;
+      padding: 0;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    header {
+      background: linear-gradient(135deg, #1a1f3a 0%, #0a0e27 100%);
+      padding: 2.5rem 2rem;
+      border-bottom: 2px solid #e74c3c;
+      position: relative;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #ffffff;
+      margin-bottom: 0.5rem;
+      letter-spacing: -0.5px;
+    }
+
+    header .meta {
+      font-size: 1.05rem;
+      color: #b0b0b0;
+      margin-bottom: 1.5rem;
+    }
+
+    nav {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      padding: 0.75rem 1.5rem;
+      background: rgba(231, 76, 60, 0.1);
+      color: #e74c3c;
+      border: 1px solid #e74c3c;
+      border-radius: 6px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      background: #e74c3c;
+      color: #ffffff;
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(231, 76, 60, 0.3);
+    }
+
+    main {
+      flex: 1;
+      padding: 3rem 2rem;
+    }
+
+    section {
+      margin-bottom: 2.5rem;
+      padding: 2rem;
+      background: linear-gradient(135deg, #1a1f3a 0%, #15192e 100%);
+      border-radius: 8px;
+      border-left: 4px solid #e74c3c;
+      transition: all 0.3s ease;
+      backdrop-filter: blur(10px);
+    }
+
+    section:hover {
+      box-shadow: 0 10px 30px rgba(231, 76, 60, 0.15);
+      transform: translateX(4px);
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      color: #ffffff;
+      margin-bottom: 1rem;
+      font-weight: 700;
+    }
+
+    p {
+      margin-bottom: 1rem;
+      color: #c0c0c0;
+      line-height: 1.8;
+    }
+
+    a {
+      color: #e74c3c;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    a:hover {
+      color: #ff6b6b;
+      text-decoration: underline;
+    }
+
+    section p a {
+      display: inline-block;
+      padding: 0.75rem 1.5rem;
+      background: linear-gradient(135deg, #e74c3c 0%, #c0392b 100%);
+      color: #ffffff;
+      border-radius: 6px;
+      margin-top: 1rem;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.3s ease;
+    }
+
+    section p a:hover {
+      background: linear-gradient(135deg, #ff6b6b 0%, #e74c3c 100%);
+      transform: translateY(-2px);
+      box-shadow: 0 5px 15px rgba(231, 76, 60, 0.4);
+      text-decoration: none;
+    }
+
+    .contact {
+      background: linear-gradient(135deg, rgba(231, 76, 60, 0.15) 0%, rgba(192, 57, 43, 0.1) 100%);
+      padding: 2rem;
+      border-radius: 8px;
+      border-left: 5px solid #e74c3c;
+      margin-top: 1rem;
+    }
+
+    address {
+      font-style: normal;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+      color: #d0d0d0;
+    }
+
+    address strong {
+      color: #ffffff;
+      font-weight: 700;
+    }
+
+    .impressum {
+      background: linear-gradient(135deg, rgba(231, 76, 60, 0.12) 0%, rgba(192, 57, 43, 0.08) 100%);
+      padding: 2rem;
+      border-radius: 8px;
+      border-left: 5px solid #e74c3c;
+      margin-top: 1rem;
+    }
+
+    footer {
+      background: linear-gradient(135deg, #1a1f3a 0%, #0f1329 100%);
+      padding: 2rem;
+      border-top: 2px solid #e74c3c;
+      text-align: center;
+      color: #909090;
+      font-size: 0.9rem;
+    }
+
+    footer p {
+      margin: 0.5rem 0;
+      color: #909090;
+    }
+
+    .skip-link {
+      position: absolute;
+      top: -40px;
+      left: 0;
+      background: #e74c3c;
+      color: white;
+      padding: 0.5rem 1rem;
+      z-index: 100;
+      border-radius: 0 0 6px 0;
+      font-weight: 600;
+    }
+
+    .skip-link:focus {
+      top: 0;
+    }
+
+    .meta {
+      font-size: 0.9rem;
+      color: #808080;
+    }
+
+    @media (max-width: 768px) {
+      header h1 {
+        font-size: 1.8rem;
+      }
+
+      h2 {
+        font-size: 1.3rem;
+      }
+
+      nav {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+
+      nav a {
+        width: 100%;
+        text-align: center;
+      }
+
+      main {
+        padding: 1.5rem 1rem;
+      }
+
+      section {
+        padding: 1.5rem;
+        margin-bottom: 1.5rem;
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    section {
+      animation: slideUp 0.6s ease-out forwards;
+    }
+
+    section:nth-child(2) {
+      animation-delay: 0.1s;
+    }
+
+    section:nth-child(3) {
+      animation-delay: 0.2s;
+    }
+
+    section:nth-child(4) {
+      animation-delay: 0.3s;
+    }
+
+    section:nth-child(5) {
+      animation-delay: 0.4s;
+    }
+  </style>
 </head>
 <body>
   <a class="skip-link" href="#main">Zum Inhalt springen</a>
 
   <div class="container">
     <header role="banner">
-      <h1>🤖 Automaten Jever</h1>
-      <p class="meta">Alle wichtigen Informationen zu unseren Verkaufsautomaten</p>
+      <h1>Automaten Jever</h1>
+      <p class="meta">Verkaufsautomat Informationen</p>
 
       <nav aria-label="Hauptnavigation">
-        <a href="index.html">📍 Start</a>
-        <a href="agb.html">📋 AGB</a>
-        <a href="datenschutz.html">🔒 Datenschutz</a>
-        <a href="impressum.html">ℹ️ Impressum</a>
+        <a href="index.html">Start</a>
+        <a href="agb.html">AGB</a>
+        <a href="datenschutz.html">Datenschutz</a>
+        <a href="impressum.html">Impressum</a>
       </nav>
     </header>
 
     <main id="main" role="main" aria-label="Seiteninhalt">
       <section aria-labelledby="agbs">
-        <h2 id="agbs">📋 Allgemeine Geschäftsbedingungen</h2>
+        <h2 id="agbs">Allgemeine Geschäftsbedingungen</h2>
         <p>Hier finden Sie alle Informationen zu unseren AGB für die Nutzung unserer Verkaufsautomaten.</p>
-        <p><a href="agb.html">AGB vollständig anzeigen →</a></p>
+        <p><a href="agb.html">AGB vollständig anzeigen</a></p>
       </section>
 
       <section aria-labelledby="datenschutz">
-        <h2 id="datenschutz">🔒 Datenschutzhinweise</h2>
+        <h2 id="datenschutz">Datenschutzhinweise</h2>
         <p>Ihre Privatsphäre ist uns wichtig. Erfahren Sie, wie wir mit Ihren Daten umgehen.</p>
-        <p><a href="datenschutz.html">Datenschutzhinweise ansehen →</a></p>
+        <p><a href="datenschutz.html">Datenschutzhinweise ansehen</a></p>
       </section>
 
       <section aria-labelledby="video">
-        <h2 id="video">📹 Videoüberwachung</h2>
+        <h2 id="video">Videoüberwachung</h2>
         <p>
           Dieser Bereich wird zum Schutz vor Diebstahl und Vandalismus sowie zur Wahrung des Hausrechts videoüberwacht.
         </p>
@@ -102,23 +333,22 @@
       </section>
 
       <section aria-labelledby="verantwortlicher">
-        <h2 id="verantwortlicher">👤 Verantwortlicher & Kontakt</h2>
-        <div class="contact" role="contentinfo">
+        <h2 id="verantwortlicher">Kontakt</h2>
+        <div class="contact">
           <address>
             <strong>Automaten Jever</strong><br>
             Inhaber: Nico Evers<br>
             Ringstraße 14a<br>
             26441 Jever<br><br>
-            📧 E-Mail: <a href="mailto:automaten.jever@gmail.com">automaten.jever@gmail.com</a><br>
-            📱 Telefon / WhatsApp: <a href="tel:+4915233512415">0152 33512415</a><br>
-            💬 <a href="https://wa.me/4915233512415" rel="noopener" target="_blank">Kontakt via WhatsApp</a>
+            E-Mail: <a href="mailto:automaten.jever@gmail.com">automaten.jever@gmail.com</a><br>
+            Telefon / WhatsApp: <a href="tel:+4915233512415">+49 152 335 124 15</a><br>
+            <a href="https://wa.me/4915233512415" rel="noopener" target="_blank">Kontakt via WhatsApp</a>
           </address>
-          <p class="meta">Die Telefonnummer wurde für internationale Nutzung optimiert.</p>
         </div>
       </section>
 
       <section aria-labelledby="impressum">
-        <h2 id="impressum">ℹ️ Impressum</h2>
+        <h2 id="impressum">Impressum</h2>
         <div class="impressum">
           <p>
             <strong>Automaten Jever</strong><br>
@@ -126,14 +356,14 @@
             Ringstraße 14a<br>
             26441 Jever
           </p>
-          <p><a href="impressum.html">Vollständiges Impressum anzeigen →</a></p>
+          <p><a href="impressum.html">Vollständiges Impressum anzeigen</a></p>
         </div>
       </section>
     </main>
 
     <footer role="contentinfo">
-      <p class="meta">Letzte Aktualisierung: 2026-09-08</p>
-      <p class="meta">&copy; 2026 Automaten Jever — Alle Rechte vorbehalten</p>
+      <p>Letzte Aktualisierung: 08.09.2026</p>
+      <p>&copy; 2026 Automaten Jever — Alle Rechte vorbehalten</p>
     </footer>
   </div>
 </body>
