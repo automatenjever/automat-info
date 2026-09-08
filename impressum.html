@@ -5,56 +5,188 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Impressum - Automaten Jever</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            max-width: 800px;
-            margin: 50px auto;
-            padding: 20px;
-            line-height: 1.6;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
             color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
         }
-        h1 {
-            color: #000;
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
         }
+
+        .header {
+            position: relative;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .start-button {
+            position: absolute;
+            right: 30px;
+            top: 20px;
+            background: #ffeb3b;
+            color: #222;
+            padding: 10px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            box-shadow: 0 6px 18px rgba(102,126,234,0.15);
+            transition: opacity 0.3s;
+        }
+
+        .start-button:hover {
+            opacity: 0.9;
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
+
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 40px;
+        }
+
         h2 {
+            color: #667eea;
+            font-size: 1.4em;
             margin-top: 30px;
-            color: #000;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-left: 4px solid #667eea;
+            padding-left: 15px;
+        }
+
+        h2:first-of-type {
+            margin-top: 0;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            background: #f5f7fa;
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #e0e0e0;
+        }
+
+        .footer p {
+            margin-bottom: 5px;
+            font-size: 0.95em;
+        }
+
+        .external-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .external-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .content {
+                padding: 25px;
+            }
+
+            .header h1 {
+                font-size: 1.8em;
+            }
+
+            .start-button {
+                right: 20px;
+                top: 15px;
+                padding: 8px 12px;
+                font-size: 0.9em;
+            }
         }
     </style>
 </head>
 <body>
-    <h1>Impressum</h1>
-    
-    <h2>Angaben gemäß § 5 TMG:</h2>
-    <p>
-        Automaten Jever<br>
-        Inh. Nico Evers<br>
-        Ringstraße 14a<br>
-        26441 Jever<br>
-        Deutschland
-    </p>
-    
-    <h2>Kontakt:</h2>
-    <p>
-        Telefon/WhatsApp: <a href="tel:+4915233512415">015233512415</a><br>
-        E-Mail: <a href="mailto:automaten.jever@gmail.com">automaten.jever@gmail.com</a>
-    </p>
-    
-    <h2>Verantwortlich für den Inhalt (gem. § 55 Abs. 2 RStV):</h2>
-    <p>
-        Nico Evers<br>
-        Ringstraße 14a<br>
-        26441 Jever
-    </p>
-    
-    <h2>Haftungsausschluss:</h2>
-    <p>
-        Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach den §§ 8 bis 10 des TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
-    </p>
-    
-    <h2>Urheberrecht:</h2>
-    <p>
-        Die Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des Autors oder Erstellers.
-    </p>
+    <div class="container">
+        <div class="header">
+            <a class="start-button" href="index.html" aria-label="Startseite">🏠 Start</a>
+            <h1>ℹ️ Impressum</h1>
+            <p>Automaten Jever</p>
+        </div>
+
+        <div class="content">
+            <h2>Angaben gemäß § 5 TMG:</h2>
+            <p>
+                Automaten Jever<br>
+                Inh. Nico Evers<br>
+                Ringstraße 14a<br>
+                26441 Jever<br>
+                Deutschland
+            </p>
+
+            <h2>Kontakt:</h2>
+            <p>
+                Telefon/WhatsApp: <a href="tel:+4915233512415">+49 152 335 124 15</a><br>
+                E-Mail: <a href="mailto:automaten.jever@gmail.com">automaten.jever@gmail.com</a>
+            </p>
+
+            <h2>Verantwortlich für den Inhalt (gem. § 55 Abs. 2 RStV):</h2>
+            <p>
+                Nico Evers<br>
+                Ringstraße 14a<br>
+                26441 Jever
+            </p>
+
+            <h2>Haftungsausschluss:</h2>
+            <p>
+                Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß § 7 Abs.1 TMG für eigene Inhalte auf diesen Seiten nach den allgemeinen Gesetzen verantwortlich. Nach den §§ 8 bis 10 des TMG sind wir als Diensteanbieter jedoch nicht verpflichtet, übermittelte oder gespeicherte fremde Informationen zu überwachen oder nach Umständen zu forschen, die auf eine rechtswidrige Tätigkeit hinweisen.
+            </p>
+
+            <h2>Urheberrecht:</h2>
+            <p>
+                Die Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung außerhalb der Grenzen des Urheberrechtes bedürfen der schriftlichen Zustimmung des Autors oder Erstellers.
+            </p>
+        </div>
+
+        <div class="footer">
+            <p><strong>Automaten Jever</strong></p>
+            <p>Nico Evers | Ringstraße 14a | 26441 Jever</p>
+            <p>📧 <a href="mailto:automaten.jever@gmail.com" class="external-link">automaten.jever@gmail.com</a> | 📱 <a href="tel:+4915233512415" class="external-link">+49 152 335 124 15</a></p>
+            <p style="margin-top: 20px; font-size: 0.9em; color: #999;">Zuletzt aktualisiert: 08.09.2026</p>
+        </div>
+    </div>
 </body>
 </html>
