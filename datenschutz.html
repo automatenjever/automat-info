@@ -1,98 +1,338 @@
-Datenschutzhinweise zur Videoüberwachung
-1. Verantwortlicher
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Datenschutzerklärung für Videoüberwachung und Zahlungsabwicklung">
+    <title>Datenschutzerklärung - Automaten Jever</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-Verantwortlich für die Verarbeitung personenbezogener Daten im Rahmen der Videoüberwachung ist:
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
 
-Automaten Jever
-Ihn. Nico Evers
-Ringstraße 14a
-26441 Jever
-E-Mail-Adresse: automaten.jever@gmail.com
-Telefonnummer/Whatsapp:015233512415
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 10px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
 
-2. Zweck der Videoüberwachung
+        .header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 40px 30px;
+            text-align: center;
+        }
 
-Die Videoüberwachung erfolgt zum Zwecke
+        .header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            font-weight: 700;
+        }
 
-der Verhinderung und Aufklärung von Diebstählen,
-der Verhinderung und Aufklärung von Sachbeschädigungen und Vandalismus,
-der Wahrung des Hausrechts,
-der Sicherung des Eigentums sowie
-der Durchsetzung und Abwehr rechtlicher Ansprüche.
-3. Rechtsgrundlage der Verarbeitung
+        .header p {
+            font-size: 1.1em;
+            opacity: 0.9;
+        }
 
-Die Verarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO.
+        .content {
+            padding: 40px;
+        }
 
-Unser berechtigtes Interesse besteht im Schutz unserer Verkaufsautomaten, Warenbestände, technischen Einrichtungen sowie in der Verhinderung und Aufklärung von Straftaten und Missbrauch.
+        section {
+            margin-bottom: 45px;
+        }
 
-4. Erfasste Daten
+        h2 {
+            color: #667eea;
+            font-size: 1.6em;
+            margin-bottom: 15px;
+            padding-bottom: 10px;
+            border-left: 4px solid #667eea;
+            padding-left: 15px;
+        }
 
-Im Bereich der Videoüberwachung können Bildaufnahmen von Personen, Fahrzeugen und sonstigen Vorgängen im Erfassungsbereich der Kameras aufgezeichnet werden.
+        h3 {
+            color: #555;
+            font-size: 1.2em;
+            margin-top: 20px;
+            margin-bottom: 12px;
+        }
 
-Eine Tonaufzeichnung findet nicht statt.
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
 
-5. Speicherdauer
+        ul, ol {
+            margin: 15px 0 15px 30px;
+        }
 
-Die Aufzeichnungen werden grundsätzlich spätestens nach 72 Stunden automatisch gelöscht, sofern sie nicht zur Aufklärung eines konkreten Vorfalls, zur Beweissicherung oder zur Geltendmachung, Ausübung oder Verteidigung von Rechtsansprüchen benötigt werden.
+        li {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
 
-In diesen Fällen erfolgt die Speicherung bis zum Abschluss des jeweiligen Verfahrens.
+        .highlight-box {
+            background: #f8f9ff;
+            border-left: 4px solid #667eea;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 5px;
+        }
 
-6. Empfänger der Daten
+        .contact-card {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 25px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
 
-Aufzeichnungen werden grundsätzlich nicht an Dritte weitergegeben.
+        .contact-card strong {
+            display: block;
+            font-size: 1.2em;
+            margin-bottom: 15px;
+        }
 
-Eine Weitergabe erfolgt nur, soweit dies gesetzlich zulässig oder erforderlich ist, insbesondere an:
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            font-size: 1em;
+        }
 
-Strafverfolgungsbehörden,
-Gerichte,
-Rechtsanwälte,
-Versicherungen oder
-sonstige zuständige Stellen im Zusammenhang mit der Aufklärung konkreter Vorfälle.
-7. Ihre Rechte
+        .contact-info a {
+            color: #ffeb3b;
+            text-decoration: none;
+            transition: opacity 0.3s;
+        }
 
-Betroffene Personen haben nach der DSGVO insbesondere folgende Rechte:
+        .contact-info a:hover {
+            opacity: 0.8;
+        }
 
-Auskunft (Art. 15 DSGVO)
-Berichtigung (Art. 16 DSGVO)
-Löschung (Art. 17 DSGVO)
-Einschränkung der Verarbeitung (Art. 18 DSGVO)
-Widerspruch gegen die Verarbeitung (Art. 21 DSGVO)
-Beschwerde bei einer Datenschutzaufsichtsbehörde (Art. 77 DSGVO)
+        .divider {
+            height: 2px;
+            background: linear-gradient(to right, #667eea, #764ba2, #667eea);
+            margin: 50px 0;
+        }
 
-Zur Ausübung Ihrer Rechte können Sie sich an die oben genannten Kontaktdaten wenden.
+        .rights-list {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
 
-8. Kontakt
+        .rights-item {
+            background: #f8f9ff;
+            padding: 15px;
+            border-radius: 5px;
+            border-left: 3px solid #667eea;
+        }
 
-Bei Fragen zur Videoüberwachung oder zum Datenschutz wenden Sie sich bitte an:
+        .rights-item strong {
+            color: #667eea;
+        }
 
-Automaten Jever
-Ihn. Nico Evers
-Ringstraße 14a
-26441 Jever
+        .footer {
+            background: #f5f7fa;
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            border-top: 1px solid #e0e0e0;
+        }
 
-E-Mail: automaten.jever@gmail.com
-Whatsapp/Tel.: 015233512415
+        .footer p {
+            margin-bottom: 5px;
+            font-size: 0.95em;
+        }
 
+        .external-link {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: 500;
+        }
 
-Datenschutzhinweise zur Kartenzahlung
-Zahlungsabwicklung
+        .external-link:hover {
+            text-decoration: underline;
+        }
 
-An diesem Verkaufsautomaten kann eine bargeldlose Zahlung per Kreditkarte, Debitkarte sowie weiteren unterstützten Zahlungsmethoden erfolgen.
+        @media (max-width: 768px) {
+            .content {
+                padding: 25px;
+            }
 
-Die Abwicklung der elektronischen Zahlung erfolgt über das Bezahlsystem Nayax Ltd. und die mit Nayax verbundenen Zahlungsdienstleister.
+            .header h1 {
+                font-size: 1.8em;
+            }
 
-Bei der Durchführung einer Zahlung können personenbezogene Daten verarbeitet werden, insbesondere:
+            h2 {
+                font-size: 1.3em;
+            }
 
-Kartendaten (in gekürzter Form)
-Zahlungsbetrag
-Zeitpunkt der Transaktion
-Transaktionsnummer
-Informationen zur Autorisierung der Zahlung
+            .rights-list {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🔒 Datenschutzerklärung</h1>
+            <p>Automaten Jever</p>
+        </div>
 
-Die Verarbeitung erfolgt ausschließlich zum Zweck der Zahlungsabwicklung, Betrugsprävention und Erfüllung rechtlicher Verpflichtungen.
+        <div class="content">
+            <!-- VIDEOÜBERWACHUNG -->
+            <section>
+                <h2>📹 Datenschutzhinweise zur Videoüberwachung</h2>
 
-Rechtsgrundlage ist Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung) sowie Art. 6 Abs. 1 lit. c DSGVO (gesetzliche Verpflichtungen).
+                <h3>1. Verantwortlicher</h3>
+                <div class="contact-card">
+                    <strong>Automaten Jever</strong>
+                    <div class="contact-info">
+                        <span>Inhaber: Nico Evers</span>
+                        <span>Ringstraße 14a</span>
+                        <span>26441 Jever</span>
+                        <span><a href="mailto:automaten.jever@gmail.com">📧 automaten.jever@gmail.com</a></span>
+                        <span><a href="tel:+4915233512415">📱 +49 152 335 124 15</a> (Telefon/WhatsApp)</span>
+                    </div>
+                </div>
 
-Weitere Informationen zur Datenverarbeitung durch Nayax finden Sie in den Datenschutzhinweisen von Nayax:
+                <h3>2. Zweck der Videoüberwachung</h3>
+                <p>Die Videoüberwachung erfolgt zum Zwecke:</p>
+                <ul>
+                    <li>der Verhinderung und Aufklärung von Diebstählen</li>
+                    <li>der Verhinderung und Aufklärung von Sachbeschädigungen und Vandalismus</li>
+                    <li>der Wahrung des Hausrechts</li>
+                    <li>der Sicherung des Eigentums</li>
+                    <li>der Durchsetzung und Abwehr rechtlicher Ansprüche</li>
+                </ul>
 
-https://www.nayax.com/privacy-policy/
+                <h3>3. Rechtsgrundlage der Verarbeitung</h3>
+                <p>Die Verarbeitung erfolgt auf Grundlage von <strong>Art. 6 Abs. 1 lit. f DSGVO</strong>.</p>
+                <div class="highlight-box">
+                    <strong>Berechtigtes Interesse:</strong> Der Schutz unserer Verkaufsautomaten, Warenbestände und technischen Einrichtungen sowie die Verhinderung und Aufklärung von Straftaten und Missbrauch.
+                </div>
+
+                <h3>4. Erfasste Daten</h3>
+                <p>Im Bereich der Videoüberwachung werden folgende Daten erfasst:</p>
+                <ul>
+                    <li>Bildaufnahmen von Personen</li>
+                    <li>Aufnahmen von Fahrzeugen</li>
+                    <li>Sonstige Vorgänge im Erfassungsbereich der Kameras</li>
+                </ul>
+                <div class="highlight-box">
+                    <strong>Hinweis:</strong> Eine Tonaufzeichnung findet <strong>nicht</strong> statt.
+                </div>
+
+                <h3>5. Speicherdauer</h3>
+                <p>Die Aufzeichnungen werden grundsätzlich spätestens nach <strong>72 Stunden</strong> automatisch gelöscht, sofern sie nicht zur Aufklärung eines konkreten Vorfalls, zur Beweissicherung oder zur Geltendmachung von rechtlichen Ansprüchen erforderlich sind.</p>
+                <p>In diesen Fällen erfolgt die Speicherung bis zum Abschluss des jeweiligen Verfahrens.</p>
+
+                <h3>6. Empfänger der Daten</h3>
+                <p>Aufzeichnungen werden grundsätzlich <strong>nicht an Dritte weitergegeben</strong>.</p>
+                <p>Eine Weitergabe erfolgt nur, soweit dies gesetzlich zulässig oder erforderlich ist, insbesondere an:</p>
+                <ul>
+                    <li>Strafverfolgungsbehörden</li>
+                    <li>Gerichte</li>
+                    <li>Rechtsanwälte</li>
+                    <li>Versicherungen</li>
+                    <li>Sonstige zuständige Stellen im Zusammenhang mit der Aufklärung konkreter Vorfälle</li>
+                </ul>
+
+                <h3>7. Ihre Rechte nach der DSGVO</h3>
+                <p>Betroffene Personen haben folgende Rechte:</p>
+                <div class="rights-list">
+                    <div class="rights-item">
+                        <strong>Auskunftsrecht</strong> (Art. 15 DSGVO)
+                    </div>
+                    <div class="rights-item">
+                        <strong>Berichtigungsrecht</strong> (Art. 16 DSGVO)
+                    </div>
+                    <div class="rights-item">
+                        <strong>Löschungsrecht</strong> (Art. 17 DSGVO)
+                    </div>
+                    <div class="rights-item">
+                        <strong>Einschränkung</strong> der Verarbeitung (Art. 18 DSGVO)
+                    </div>
+                    <div class="rights-item">
+                        <strong>Widerspruchsrecht</strong> (Art. 21 DSGVO)
+                    </div>
+                    <div class="rights-item">
+                        <strong>Beschwerde</strong> bei einer Datenschutzaufsichtsbehörde (Art. 77 DSGVO)
+                    </div>
+                </div>
+                <p>Zur Ausübung Ihrer Rechte kontaktieren Sie uns bitte über die oben genannten Kontaktdaten.</p>
+            </section>
+
+            <div class="divider"></div>
+
+            <!-- KARTENZAHLUNG -->
+            <section>
+                <h2>💳 Datenschutzhinweise zur Kartenzahlung</h2>
+
+                <h3>Zahlungsabwicklung</h3>
+                <p>An unseren Verkaufsautomaten kann eine bargeldlose Zahlung per Kreditkarte, Debitkarte sowie weiteren unterstützten Zahlungsmethoden erfolgen.</p>
+
+                <p>Die Abwicklung der elektronischen Zahlung erfolgt über das Bezahlsystem <strong>Nayax Ltd.</strong> und die mit Nayax verbundenen Zahlungsdienstleister.</p>
+
+                <h3>Verarbeitete personenbezogene Daten</h3>
+                <p>Bei der Durchführung einer Zahlung werden folgende Daten verarbeitet:</p>
+                <ul>
+                    <li>Kartendaten (in gekürzter Form)</li>
+                    <li>Zahlungsbetrag</li>
+                    <li>Zeitpunkt der Transaktion</li>
+                    <li>Transaktionsnummer</li>
+                    <li>Informationen zur Autorisierung der Zahlung</li>
+                </ul>
+
+                <h3>Zweck der Verarbeitung</h3>
+                <p>Die Verarbeitung erfolgt ausschließlich zum Zweck:</p>
+                <ul>
+                    <li>der Zahlungsabwicklung</li>
+                    <li>der Betrugsprävention</li>
+                    <li>der Erfüllung rechtlicher Verpflichtungen</li>
+                </ul>
+
+                <h3>Rechtsgrundlage</h3>
+                <div class="highlight-box">
+                    <ul style="margin: 0;">
+                        <li><strong>Art. 6 Abs. 1 lit. b DSGVO</strong> – Vertragserfüllung</li>
+                        <li><strong>Art. 6 Abs. 1 lit. c DSGVO</strong> – Erfüllung gesetzlicher Verpflichtungen</li>
+                    </ul>
+                </div>
+
+                <h3>Datenschutz bei Nayax</h3>
+                <p>Weitere Informationen zur Datenverarbeitung durch Nayax finden Sie in der Datenschutzerklärung von Nayax:</p>
+                <p style="text-align: center; margin: 20px 0;">
+                    <a href="https://www.nayax.com/privacy-policy/" class="external-link" target="_blank">🔗 Datenschutzerklärung von Nayax (nayax.com/privacy-policy/)</a>
+                </p>
+            </section>
+        </div>
+
+        <div class="footer">
+            <p><strong>Automaten Jever</strong></p>
+            <p>Nico Evers | Ringstraße 14a | 26441 Jever</p>
+            <p>📧 <a href="mailto:automaten.jever@gmail.com" class="external-link">automaten.jever@gmail.com</a> | 📱 <a href="tel:+4915233512415" class="external-link">+49 152 335 124 15</a></p>
+            <p style="margin-top: 20px; font-size: 0.9em; color: #999;">Gültig ab: September 2026</p>
+        </div>
+    </div>
+</body>
+</html>
